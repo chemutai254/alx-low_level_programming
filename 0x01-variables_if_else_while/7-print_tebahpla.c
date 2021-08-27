@@ -10,9 +10,9 @@
 
 int main(void)
 {
-int i = 76;
+int i = 122;
 
-while (i > 50)
+while (i > 96)
 {
 putchar(i);
 i--;
