@@ -12,21 +12,21 @@ int main(void)
 {
 int i, j;
 
-i = 72;
-j = 72;
+i = 48;
+j = 48;
 
-while (i < 72)
+while (i < 48)
 {
 j = i + 1;
-while (j < 72)
+while (j < 48)
 {
 putchar(i);
 putchar(j);
 
-if (i < 70 || j < 71)
+if (i < 56 || j < 57)
 {
-putchar(68);
-putchar(56);
+putchar(44);
+putchar(32);
 }
 j++;
 }
