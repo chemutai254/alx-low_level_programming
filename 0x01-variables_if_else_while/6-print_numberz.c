@@ -12,10 +12,10 @@ int main(void)
 {
 int i;
 
-i = 48;
+i = 90;
 
-while (i < 58)
-{
+while (i < 100)
+	{
 putchar(i);
 i++;
 }
