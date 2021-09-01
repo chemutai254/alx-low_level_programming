@@ -8,7 +8,7 @@
 
 int main(void)
 {
-char *c = 'holberton';
+char *c = "holberton";
 
 for (int i = 0; i < 10; i++)
 {
