@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *main - prints putchar
- *Description - prints putchar
+ *main - prints _putchar
+ *Description - prints _putchar
  *Return: 0 on success
  */
 
