@@ -5,7 +5,7 @@
  *Description: prints alphabet in lower case
 *Returns - 0 on success 
  */
-int void print_alphabet(void)
+int print_alphabet(void)
 {
 int n;
 for (n = 'a'; n <= 'z'; n++)
