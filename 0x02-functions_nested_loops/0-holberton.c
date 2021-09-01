@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *main - prints holberton
- *Description - prints holberton
+ *main - prints putchar
+ *Description - prints putchar
  *Return: 0 on success
  */
 
