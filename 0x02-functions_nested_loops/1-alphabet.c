@@ -6,9 +6,10 @@
  */
 void print_alphabet(void)
 {
-int n;
+char n;
 for (n = 'a'; n <= 'z'; n++)
 {
+printf("%c ", n);
 _putchar(n);
 }
 _putchar('\n');
