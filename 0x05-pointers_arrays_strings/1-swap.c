@@ -4,12 +4,12 @@
  * swap_int - function that swaps two integer values
  * @a: pointer
  * @b: pointer
+ * @c: pointer
  * return: void
  */
 
-void swap_int(int *a, int *b)
+void swap_int(int *a, int *b, int *c)
 {
-	int *c;
 	*c = *a;
 	*a = *b;
 	*b = *c;
