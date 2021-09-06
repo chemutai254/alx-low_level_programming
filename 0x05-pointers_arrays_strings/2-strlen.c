@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len;
 
-	s = "";
+	s = "Holberton";
 	len = _strlen(s);
 	return (len);
 }
