@@ -11,8 +11,6 @@ int _strlen(char *s)
 {
 	int len;
 
-	s = "Holberton!";
-
 	for (len = 0; s[len] != '\0'; len++)
 	{
 		printf("Length of the string: %d", len);
