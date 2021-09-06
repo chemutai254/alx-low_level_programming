@@ -9,7 +9,9 @@
 
 void print_rev(char *s)
 {
-	int a = strrev(s);
+	int a;
+
+	a = strrev(s);
 
 	print_rev(a);
 	printf('\n');
