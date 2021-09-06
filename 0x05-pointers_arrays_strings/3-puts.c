@@ -9,12 +9,12 @@
 
 void _puts(char *str)
 {
-	int c = 0;
+	int n = 0;
 
-	while (str[c] != '\0')
+	while (str[n] != '\0')
 	{
-		printf("%c", str[c]);
+		_puts(str[n]);
 		c++;
 	}
-	printf('\n');
+	_puts('\n');
 }
