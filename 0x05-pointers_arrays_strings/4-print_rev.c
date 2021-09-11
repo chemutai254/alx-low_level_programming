@@ -9,20 +9,20 @@
 
 void print_rev(char *s)
 {
-	char a = 0;
-	int i = 0, len = 0;
+	char a[10], rev[10];
+	int i, j, count = 0;
 
-	while (s[len++] != '\0')
-	len--;
-
-	while (i < len)
+	while (s[count] != '\0')
 	{
-		a = s[i];
-		s[i] = s[len];
-		s[len] = a;
-		i++;
-		len--;
+		count++;
 	}
-	print_rev(s);
+	j = count - 1;
+
+	for (i = 0; i < count; i++)
+	{
+		rev[i] = s[j];
+		j--;
+	}
+	print_rev("Reversed String", i);
 	_putchar('\n');
 }
