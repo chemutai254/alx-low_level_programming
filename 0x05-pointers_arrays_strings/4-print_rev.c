@@ -3,26 +3,33 @@
 
 /**
  * print_rev - prints string in reverse
+ * main - prints reversed string
  * @s: String
  * Return: void
  */
 
 void print_rev(char *s)
 {
-	char a[10], rev[10];
-	int i, j, count = 0;
+	int i, len, j;
 
-	while (s[count] != '\0')
-	{
-		count++;
-	}
-	j = count - 1;
+	len = strlen(s);
 
-	for (i = 0; i < count; i++)
+	for (i = 0; i < len; i++)
 	{
-		rev[i] = s[j];
-		j--;
+		j = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = j;
 	}
-	print_rev("Reversed String", i);
-	_putchar('\n');
+}
+
+int main(void)
+{
+	char s[10];
+
+	gets(s);
+
+	print_rev(s);
+
+	_putchar("Reverse string", s);
+	_putchar("\n");
 }
