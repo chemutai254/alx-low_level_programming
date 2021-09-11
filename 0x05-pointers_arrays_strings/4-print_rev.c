@@ -3,33 +3,47 @@
 
 /**
  * print_rev - prints string in reverse
- * main - prints reversed string
+ * main() - prints reversed string
+ * str_len - prints the length
  * @s: String
  * Return: void
  */
 
 void print_rev(char *s)
 {
-	int i, len, j;
+	int len, i;
 
-	len = strlen(s);
+	char *start, *end, temp;
 
-	for (i = 0; i < len; i++)
+	len = str_len(s);
+	start = s;
+	end = s;
+
+	for (i = 0; i < len / 2; i++)
 	{
-		j = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = j;
+		temp = *end;
+		*end = *start;
+		*start = temp;
+
+		start++;
+		end--;
 	}
 }
 
 int main(void)
 {
-	char s[10];
-
-	gets(s);
+	char s[9] = 'Holberton';
 
 	print_rev(s);
-
-	_putchar("Reverse string", s);
-	_putchar("\n");
+	return (0);
 }
+
+int str_len(char *ptr)
+{
+	int i = 0;
+
+	while (*(ptr + i) != '\0')
+		i++;
+	return (i);
+}
+
