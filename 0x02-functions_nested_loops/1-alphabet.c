@@ -12,7 +12,7 @@ while (n <= 'z')
 {
 printf("%c ", n);
 n++;
-_putchar(n);
 }
+_putchar(n);
 _putchar('\n');
 }
