@@ -6,10 +6,11 @@
  */
 void print_alphabet(void)
 {
-char n;
-for (n = 'a'; n <= 'z'; n++)
+char n = 'a';
+while (n <= 'z')
 {
 printf("%c ", n);
+n++;
 _putchar(n);
 }
 _putchar('\n');
