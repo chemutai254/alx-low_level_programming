@@ -9,7 +9,8 @@
 int _abs(int)
 {
 int a, num;
-a = abs(num);
+a = _abs(num);
+return (a);
 _putchar(a);
 _putchar('\n');
 }
