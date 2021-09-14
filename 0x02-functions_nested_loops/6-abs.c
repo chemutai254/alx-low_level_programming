@@ -2,15 +2,22 @@
 
 /**
  * _abs - computes absolute value of an integer
- *@int: prints an absolute value
+ *@a: prints an absolute value
  * Return: an integer
  */
 
-int _abs(int)
+int _abs(int a)
 {
-int a, num;
-a = _abs(num);
+if (a < 0)
+{
+return (-a);
+}
+else if (a > 0)
+{
+return (+a);
+}
+else
+{
 return (a);
-_putchar(a);
-_putchar('\n');
+}
 }
