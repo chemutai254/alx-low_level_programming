@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * print_sign - prints the sign of a number
@@ -11,11 +11,11 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-return (+);
+return ('+');
 }
 else if (n < 0)
 {
-return (-);
+return ('-');
 }
 else
 {
