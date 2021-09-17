@@ -21,7 +21,7 @@ max_hours = '4';
 hours_ones = '0';
 while (hours_ones < max_hours)
 {
-minutes_tens < '0';
+minutes_tens = '0';
 while (minutes_tens < '6')
 {
 minutes_ones = '0';
