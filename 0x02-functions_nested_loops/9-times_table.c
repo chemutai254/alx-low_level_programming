@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * times_table - prints nine times table
@@ -14,7 +15,7 @@ num = 9;
 tables(num);
 for (count = 0; count <= 9; count++)
 {
-_putchar("%d x %d = %d ", num, count, num *count);
+_putchar("%d * %d = %d ", num, count, num *count);
 }
-_putchar("\n");
+_putchar('\n');
 }
