@@ -10,9 +10,8 @@
 
 int add(int x, int y)
 {
-int result = x + y;
+int result;
 
-_putchar(result);
-_putchar('\n');
+result = x + y;
 return (result);
 }
