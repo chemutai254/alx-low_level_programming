@@ -14,4 +14,5 @@ int result = x + y;
 
 _putchar(result);
 _putchar('\n');
+return (result);
 }
