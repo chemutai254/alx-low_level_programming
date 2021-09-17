@@ -9,12 +9,35 @@
 
 void times_table(void)
 {
-int num, count;
-num = 9;
+int num, count, product, tens, ones;
 
-for (count = 1; count <= 9; count++)
+for (num = 0; num <= 9; num++)
 {
-_putchar('%d * %d = %d ', num, count, (num *count));
+for (count = 0; count <= 9; count++)
+{
+product = num * count;
+tens = product / 10;
+ones = product % 10;
+
+if (count == 0)
+{
+_putchar('0');
+}
+else if (product < 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(ones + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(tens + '0');
+_putchar(ones + '0');
+}
 }
 _putchar('\n');
+}
 }
