@@ -15,16 +15,16 @@ if (n < 98)
 {
 while (n < 98)
 {
-_putchar(n);
+_putchar('%d ', n);
 n++;
 }
 }
-else if (n < 0)
+else if (n < 98)
 {
-while (n < 0)
+while (n < 98)
 {
-_putchar(n);
+_putchar('%d, ', n);
 }
 }
-_putchar('\n');
+_putchar('98\n');
 }
