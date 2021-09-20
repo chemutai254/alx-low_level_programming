@@ -10,15 +10,13 @@
 
 void print_times_table(int n)
 {
-int col, product, tens, ones;
+int col, product;
 
 for (n = 0; n <= 15; n++)
 {
 for (col = 0; col <= 15; col++)
 {
 product = n * col;
-tens = product / 15;
-ones = product % 15;
 
 if (col == 0)
 {
@@ -28,8 +26,7 @@ else if (product <= 15)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(tens + '0');
-_putchar(ones + '0');
+_putchar(product % 10 + '0');
 }
 }
 _putchar('\n');
