@@ -15,7 +15,7 @@ if (n < 98)
 {
 while (n < 98)
 {
-printf(n);
+_putchar(n);
 n++;
 }
 }
@@ -23,9 +23,9 @@ else if (n > 98)
 {
 while (n > 98)
 {
-printf(n);
+_putchar(n);
 n--;
 }
 }
-printf('98\n');
+_putchar('98\n');
 }
