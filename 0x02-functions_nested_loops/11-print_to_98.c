@@ -16,5 +16,5 @@ while (n > 0 && n < 98)
 _putchar(n);
 n++;
 }
-_putchar(\n');
+_putchar('\n');
 }
