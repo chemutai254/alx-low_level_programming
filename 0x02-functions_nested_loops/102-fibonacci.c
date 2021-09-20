@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - prints fibonacci series
+ * _fibonacci - prints fibonacci series
  * @a: integer
  * Description: prints first 50 fibonacci numbers
  *
  * Return: 0
  */
 
-int main(int a)
+void _fibonacci(int a)
 {
 int b = 1, c;
 
