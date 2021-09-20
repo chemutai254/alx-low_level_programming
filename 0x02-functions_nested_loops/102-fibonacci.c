@@ -11,7 +11,7 @@
 
 void _fibonacci(int a)
 {
-int b = 1, c, count = 0;
+int b = 1, c;
 
 for (a = 0 ; a < 50; a++)
 {
@@ -23,5 +23,4 @@ b = c;
 c = a + b;
 _putchar(c);
 _putchar('\n');
-return (0);
 }
