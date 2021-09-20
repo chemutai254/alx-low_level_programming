@@ -24,15 +24,18 @@ if (col == 0)
 {
 _putchar('0');
 }
-else if (product <= 15)
+else if (product < 15)
 {
 _putchar(',');
+_putchar(' ');
+_putchar(' ');
 _putchar(' ');
 _putchar(product % 10 + '0');
 }
 else if (product > 15 && product < 100)
 {
 _putchar(',');
+_putchar(' ');
 _putchar(' ');
 _putchar((product / 10) % 10 + '0');
 _putchar(product % 10 + '0');
