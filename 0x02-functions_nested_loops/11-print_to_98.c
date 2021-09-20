@@ -19,12 +19,11 @@ _putchar(n);
 n++;
 }
 }
-else if (n > 98)
+else if (n < 0)
 {
-while (n > 98)
+while (n < 0)
 {
 _putchar(n);
-n--;
 }
 }
 _putchar('\n');
