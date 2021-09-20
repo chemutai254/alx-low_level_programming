@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_natural - prints natural numbers
+ * _print_natural - prints natural numbers
  *
  * Description: prints natural numbers
  *
  * Return: void
  */
 
-int print_natural(void)
+int _print_natural(void)
 {
 int n, sum;
 sum = 0;
