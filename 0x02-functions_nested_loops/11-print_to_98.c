@@ -11,14 +11,21 @@
 
 void print_to_98(int n)
 {
-int a;
-
-for (a = 1; a <= n / 2; a++)
+if (n < 98)
 {
-if (n % a != 0)
+while (n < 98)
 {
-_putchar(n);
+_putchar("%d, ", n);
+n++;
+}
+}
+else if (n > 98)
+{
+while (n > 98)
+{
+_putchar("%d, ", n);
+n--;
+}
 }
 _putchar('\n');
-}
 }
