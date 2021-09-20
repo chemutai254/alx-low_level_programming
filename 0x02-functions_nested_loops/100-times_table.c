@@ -17,14 +17,14 @@ for (n = 0; n <= 15; n++)
 for (col = 0; col <= 15; col++)
 {
 product = n * col;
-tens = product / 10;
-ones = product % 10;
+tens = product / 15;
+ones = product % 15;
 
 if (col == 0)
 {
 _putchar('0');
 }
-else if (product < 15)
+else if (product <= 15)
 {
 _putchar(',');
 _putchar(' ');
