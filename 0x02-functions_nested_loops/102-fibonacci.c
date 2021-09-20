@@ -3,15 +3,15 @@
 
 /**
  * main - prints fibonacci series
- *
+ * @a: integer
  * Description: prints first 50 fibonacci numbers
  *
  * Return: 0
  */
 
-int main(void)
+int main(int a)
 {
-int a, b = 1, c;
+int b = 1, c;
 
 for (a = 0 ; a < 50; a++)
 {
@@ -20,6 +20,5 @@ _putchar(c);
 a = b;
 b = c;
 _putchar('\n');
-return (0);
 }
 }
