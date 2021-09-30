@@ -1,5 +1,5 @@
 #include "main.h"
-#include <sdtio.h>
+#include <stdio.h>
 
 /**
  * main - prints numbers in multiple of threes
