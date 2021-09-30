@@ -6,7 +6,7 @@
  *
  * @n: parameter integer
  *
- * Return: n
+ * Return: 0
  */
 
 void print_line(int n)
@@ -23,7 +23,5 @@ void print_line(int n)
 		_putchar('\n');
 	}
 	else
-	{
 		_putchar('\n');
-	}
 }
