@@ -14,4 +14,5 @@ void print_square(int size);
 int main(void);
 void print_triangle(int size);
 void print_number(int n);
+int power(int base, int exp);
 #endif
