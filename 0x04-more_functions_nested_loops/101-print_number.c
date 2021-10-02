@@ -33,7 +33,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		neg = i;
+		neg = 1;
 		n = n * -1;
 	}
 	while (place >= 0)
