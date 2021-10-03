@@ -9,11 +9,10 @@
 
 int _strlen(char *s)
 {
-	int len;
+	int len = 0;
 
-	for (len = 0; s[len] != '\0'; len++)
-	{
-		printf("Length of the string: %d", len);
-	}
-	return (0);
+	while (s[len])
+		len++;
+
+	return (len);
 }
