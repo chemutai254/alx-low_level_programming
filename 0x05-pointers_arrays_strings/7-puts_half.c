@@ -10,19 +10,28 @@
 
 void puts_half(char *str)
 {
-	int i, j, max;
+	int i, j = 0;
 
-	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	max = i;
-	j = max / 2;
-	while (j <= max)
+	if (i % 2 == 0)
 	{
-		_putchar(str[j]);
-		j++;
+		for (j = 0; str[j] != '\0'; j++)
+		{
+			if (j >= i / 2)
+				_putchar(str[j]);
+		}
 	}
+	else
+	{
+		for (j = 0; str[j] != '\0'; j++)
+		{
+			if (j > i / 2)
+				_putchar(str[j]);
+		}
+	}
+
 	_putchar('\n');
 }
