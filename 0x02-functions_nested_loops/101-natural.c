@@ -11,18 +11,16 @@
 
 int main(void)
 {
-int n, sum;
+	int i;
+	int sum = 0;
 
-sum = 0;
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0  || (i % 5) == 0)
+			sum += i;
+	}
 
-for (n = 0; n < 1024; n++)
-{
-if (n % 3 == 0 || n % 5 == 0)
-{
-sum = sum + n;
-}
-}
-_putchar(sum);
-_putchar('\n');
-return (0);
+	printf("%d\n", sum);
+
+	return (0);
 }
