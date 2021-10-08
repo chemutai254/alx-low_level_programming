@@ -6,7 +6,7 @@
  * @a: integer
  * Description: prints first 50 fibonacci numbers
  *
- * Return: 0
+ * Return: integer
  */
 
 void _fibonacci(int a)
