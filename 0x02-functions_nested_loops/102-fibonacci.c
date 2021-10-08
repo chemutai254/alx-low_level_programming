@@ -6,7 +6,7 @@
  * @a: integer
  * Description: prints first 50 fibonacci numbers
  *
- * Return: integer
+ * Return: 0
  */
 
 int main(void)
