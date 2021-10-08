@@ -6,22 +6,17 @@
  *
  * @n: parameter integer
  *
- * Return: 0
  */
 
 void print_line(int n)
 {
-	int i = 0;
+	int x;
 
 	if (n > 0)
 	{
-		while (i <= n)
-		{
+		for (x = 0; x < n; x++)
 			_putchar('_');
-			i++;
-		}
-		_putchar('\n');
 	}
-	else
-		_putchar('\n');
+
+	_putchar('\n');
 }
