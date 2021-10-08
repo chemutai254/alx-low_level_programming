@@ -9,18 +9,23 @@
  * Return: integer
  */
 
-void _fibonacci(int a)
+int main(void)
 {
-int b = 1, c;
+	int i;
+	long int j = 1;
+	long int k = 1;
+	long int sum;
 
-for (a = 0 ; a < 50; a++)
-{
-c = a + b;
-_putchar(c);
-a = b;
-b = c;
-}
-c = a + b;
-_putchar(c);
-_putchar('\n');
+	printf("%d", 1);
+	for (i = 1; i <= 49; i++)
+	{
+		sum = j + k;
+		printf(", %ld", sum);
+		j = k;
+		k = sum;
+	}
+
+	printf("\n");
+
+	return (0);
 }
