@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _fibonacci - prints fibonacci series for the first 50 numbers
+ * main - prints fibonacci series for the first 50 numbers
  *
  * Return: 0
  */
