@@ -1,30 +1,11 @@
 #include "main.h"
 
 /**
- * power - exponents
- * @base: base 10
- * @exp: exponential digit
- * Return: integer
- */
-
-int power(int base, int exp)
-{
-        int i, num;
-
-        num = 1;
-        for (i = 0; i < exp; i++)
-                num *= base;
-        return (num);
-}  
-
-/**
- * print_number - prints an integer
+ * print_number - prints an integer.
+ * @n: number to print
  *
- * @n: integer patameter
- *
- * Return: 0
+ * Return: void
  */
-
 void print_number(int n)
 {
 	unsigned int temp;
