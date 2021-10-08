@@ -8,46 +8,42 @@
 
 void print_times_table(int n)
 {
-int row, col, product;
+	int i, j, r = 0;
 
-if (n >= 0 && n < 15)
-{
-for (row = 0; row <= n; row++)
-{
-for (col = 0; col <= n; col++)
-{
-product = row * col;
-
-if (col == 0)
-{
-_putchar('0');
-}
-else if (product < 10)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar(product % 10 + '0');
-}
-else if (product >= 10 && product < 100)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar((product / 10) % 10 + '0');
-_putchar(product % 10 + '0');
-}
-else if (product > 99 && product < 1000)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(product / 100 + '0');
-_putchar((product / 10) % 10 + '0');
-_putchar(product % 10 + '0');
-}
-}
-_putchar('\n');
-}
-}
+	if (n >= 0 && n <= 15)
+	{
+		for (i = 0; i <= n; i++)
+		{
+			for (j = 0; j <= n; j++)
+			{
+				r = i * j;
+				if (j > 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					if (r < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + r);
+					}
+					else if (r >= 10 && r < 100)
+					{
+						_putchar(' ');
+						_putchar('0' + (r / 10));
+						_putchar('0' + (r % 10));
+					}
+					else if (r >= 100)
+					{
+						_putchar('0' + (r / 100));
+						_putchar('0' + ((r / 10) % 10));
+						_putchar('0' + (r % 10));
+					}
+				}
+				else
+					_putchar('0' + r);
+			}
+			_putchar('\n');
+		}
+	}
 }
