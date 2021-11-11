@@ -1,0 +1,1 @@
+OxOE. C - Structures, typedef
