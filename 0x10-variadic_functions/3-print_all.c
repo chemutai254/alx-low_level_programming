@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 			if (formats[x].flag[0] == copy[y])
 			{
 				printf("%s", sep);
-				(formats[x].p)(list);
+				(formats[x].f)(list);
 				sep = ", ";
 			}
 			x++;
