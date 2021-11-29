@@ -5,22 +5,22 @@
  *
  * @head: the head of the doubly linked list
  *
- * Return: 0
+ * Return: sum
  */
 
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint *current = head;
 	int sum = 0;
 
-	if (head)
+	if (!head)
 	{
-		while (current != NULL)
-		{
-			sum += current->n;
-			current = current->next;
-		}
+		return (0);
 	}
 
+	while (head)
+	{
+		sum += head->n;
+		head = head->next;
+	}
 	return (sum);
 }
