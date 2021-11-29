@@ -1,4 +1,6 @@
+#include <string.h>
 #include "lists.h"
+
 /*
  * File: 103-keygen.c
  */
