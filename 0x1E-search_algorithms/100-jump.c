@@ -1,12 +1,13 @@
 #include "search_algos.h"
 
 /**
- * jump_search - searches for a value in a sorted array
- * @array: A pointer to the first element of the array to search
- * @size: The number of elements in an array
- * @value: The value to search for
- * Return: the first index where value is located
- * Description: prints a valueof an array you are searching for
+ * check_array - Searches a mini-array
+ * @arr: Pointer array
+ * @size: size
+ * @min: Index of the first element
+ * @max: Index of the last element
+ * @value: Value to find
+ * Return: Index at value
  */
 
 int check_array(int *arr, size_t size, size_t min, size_t max, int value)
