@@ -6,7 +6,7 @@
  * Return: the first index where value is located
  * Description: prints a valueof an array you are searching for
  */
-
+#include "search_algos.h"
 int jump_search(int *array, size_t size, int value)
 {
 	size_t i, jump, step;
