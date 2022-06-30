@@ -2,6 +2,7 @@
 #define __search__
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 /**
  * struct listint_s - singly linked list

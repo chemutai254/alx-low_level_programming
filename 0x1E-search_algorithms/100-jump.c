@@ -1,3 +1,5 @@
+#include "search_algos.h"
+
 /**
  * jump_search - searches for a value in a sorted array
  * @array: A pointer to the first element of the array to search
@@ -6,28 +8,50 @@
  * Return: the first index where value is located
  * Description: prints a valueof an array you are searching for
  */
-#include "search_algos.h"
+
+int check_array(int *arr, size_t size, size_t min, size_t max, int value)
+{
+	size_t j = 0;
+
+	for (j = min; j <= max && j < size; j++)
+	{
+		printf("Value checked array[%lu] = [%d]\n", j, arr[j]);
+		if (arr[j] == value)
+			return (j);
+	}
+	return (-1);
+}
+
+/**
+ * jump_search - Searches an array using jump algorithm
+ * @array: Pointer to the first element
+ * @size: Size of the array to search
+ * @value: Value to find
+ * Return: Index at value else -1
+ */
+
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i, jump, step;
+	size_t v = 0, i = 0;
+	char *msg = "Value found between indexes";
 
-	if (array == NULL || size == 0)
+	if (array == NULL || size < 1)
 		return (-1);
-
-	step = sqrt(size);
-	for (i = jump = 0; jump < size && array[jump] < value;)
+	v = sqrt(size);
+	for (i = 0; i < size; i += v)
 	{
-		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
-		i = jump;
-		jump += step;
+		if (array[i] == value)
+		{
+			printf("%s [%lu] and [%lu]\n", msg, i - v, i);
+			return (check_array(array, size, i - v, i, value));
+		}
+		else if (value < array[i])
+		{
+			printf("%s [%lu] and [%lu]\n", msg, i - v, i);
+			return (check_array(array, size, i - v, i, value));
+		}
+		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 	}
-
-	printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
-
-	jump = jump < size - 1 ? jump : size - 1;
-	for (; i < jump && array[i] < value; i++)
-		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-
-	return (array[i] == value ? (int)i : -1);
+	printf("%s [%lu] and [%lu]\n", msg, i - v, i);
+	return (check_array(array, size, i - v, i, value));
 }
